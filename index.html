@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parru's Madlibs</title>
+    <link rel="shortcut icon" type="image" href="images/mlogo.jpg">
+    <link rel="stylesheet" href="madlibs.css">
+</head>
+<body>
+        <div class="container">
+            <header id="intro" class="center">
+                <h1><a href="parru.html" class="parru">Parru's</a> Mad Libs</h1>
+                <h2>🎇Make your own story!🍺</h2>
+                <p><strong>Mad Libs</strong> are stories with words removed and replaced by blank spaces. Fill in the blanks for
+                    a fun goofy story! Make sure to think outside the box. The more eccentric the better!</p>
+            </header>
+        
+            <main>
+                <!-- Main MadLibs Form Input Area -->
+                <form id="madlibs-form" name="madlibs-form" onsubmit="submitMadLibs(event)">
+                    <section id="madlibs-inputs">
+                        <div class="input-group">
+                            <label for="number">🗿How do you feel:</label>
+                            <input type="text" id="feel" name="feel" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="adjective_1">🦄 Your name: </label>
+                            <input type="text" id="urname" name="urname" required>
+                        </div>
+        
+                        <div class="input-group">
+                            <label for="adjective_1">🦄 An interesting adjective</label>
+                            <input type="text" id="adjective_1" name="adjective_1" required>
+                        </div>
+        
+                        <div class="input-group">
+                            <label for="noun_1"> 😏A friend's name: </label>
+                            <input type="text" id="noun_1" name="noun_1" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="adjective_2">🦄 Yet another interesting adjective</label>
+                            <input type="text" id="adjective_2" name="adjective_2" required>
+                        </div>
+
+                        
+        
+                        <div class="input-group">
+                            <label for="noun_2">😎 Another friend's name:</label>
+                            <input type="text" id="noun_2" name="noun_2" required>
+                        </div>
+        
+                        
+        
+                        <div class="input-group">
+                            <label for="insult1">🦄 An insult word:</label>
+                            <input type="text" id="insult1" name="insult1" required>
+                        </div>
+        
+                        <div class="input-group">
+                            <label for="insult2">✏️Another insult word: </label>
+                            <input type="text" id="insult2" name="insult2" required>
+                        </div>
+        
+                        <div class="input-group">
+                            <label for="insulting_verb">An Insulting verb</label>
+                            <input type="text" id="insulting_verb" name="insulting_verb" required>
+                        </div>
+        
+                        <div class="input-group">
+                            <label for="food">🍣 Favorite food/Drink:</label>
+                            <input type="text" id="food" name="food" required>
+                        </div>
+        
+                        
+                    </section>
+        
+                    <section id="madlibs-submit">
+                        <button type="submit">
+                            Generate
+                        </button>
+                    </section>
+                </form>
+        
+                <section id="completed-story" class="hide"></section>
+            </main>
+        </div>
+        
+        
+        <!-- JS Script inclusion -->
+        <script src="madlibs.js"></script>
+
+
+
+
+   
+    
+</body>
+
+
+</html>
